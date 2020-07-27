@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Contact |
+{% endblock title %}
+{% block body %}
+
+<div class="container-fluid px-0 py-0 ">
+    <img src= "{% static "photo-1498230870289-7561110a6e69.jpg" %}"class="d-block w-100 " alt="2nd">
+    <h1 class="my-2 text-center"> Contact Us</h1>
+</div>
+<!-- Adding Form -->
+<div class="container py-2">
+<form method="post"  action="/contact">        <!--Adding method and action -->
+    {% csrf_token%}  <!--to avoid hackers-->
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email"  name="email" placeholder="Enter email">
+  </div>
+   <div class="form-group">
+    <label for="Name">Name</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Enter Phone Number</label>
+    <input type="number" class="form-control" id="phone"  name="phone" placeholder="phone number">
+  </div>
+  <div class="form-group">
+    <label for="desc">Your Query</label>
+    <textarea class="form-control" id="text" rows="3" name="desc"></textarea>
+  </div>
+        <!--Adding button -->
+        <button type="submit" class="btn btn-primary ">Submit</button>
+</form>
+
+{% endblock body %}
+<!--
+After posting we will go to view for further things
+
+---------
+to add alert search django messages and paste the code in settings.py
+-->

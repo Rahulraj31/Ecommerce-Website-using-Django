@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head%}
+<!--<script src="https://kit.fontawesome.com/2561f9a360.js" crossorigin="anonymous"></script> -->
+      <!-- icon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.fa {
+  padding: 20px;
+  font-size: 40px;
+  width: 80px;
+  hight: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+.fa:hover {
+text-decoration: none;
+color: #e9ecef;
+    opacity: 0.7;
+}
+
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #d53a3a;
+  color: white;
+}
+.fa-github {
+  background: #212529;
+;
+  color: white;
+}
+
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+</style>
+
+{% endblock head%}
+{% block title %}
+About |
+{% endblock title %}
+
+{% block body %}
+
+ <div class="container-fluid px-0" id="content">
+     <img src="{% static "photo-1586281380349-632531db7ed4.jpg"%}" class="d-block w-100 " alt="2nd">
+     <br>
+     <center><h1 style="font-size:100px"> About Developer </h1></center>
+ </div>
+<br>
+ <div class="container py-3 " id="content" >
+                  <p style="font-size:20px">
+                      This site  is developed by <b>RAHUL RAJ PANDEY </b> for educational purpose. I am a undergrad  student of B.Tech in CSE <i>(spec in A.I & M.L)</i>.
+                      I am from Kanpur, Uttar Pradesh, India.<br>
+                 <h4> So, yeah that's it. I know this part is always BORING!! </h4><br> </p>
+                    <p style="font-size:20px">   And yeah might be updating this site later.
+                   </p>
+ </div>
+
+<div class="container py-3 " id="content" >
+                  <p style="font-size:30px">
+
+                     <center><h3> Contact Me <h3></center>
+                   </p>
+ </div>
+
+
+<!-- Add font awesome icons -->
+<center>
+ <h1><a href="http://linkedin.com/in/rahul-raj-pandey-60b5861b1" class="fa fa-linkedin" ></a>
+
+<a href="https://www.instagram.com/they.call.me.lunatic" class="fa fa-instagram"></a>
+<a href="https://github.com/Rahulraj31" class="fa fa-github"></a>
+     <a href="https://www.snapchat.com/add/lunatic.rahul" class="fa fa-snapchat-ghost"></a></h1>
+</center><br>
+{% endblock body %}
