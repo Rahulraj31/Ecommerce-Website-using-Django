@@ -1,6 +1,7 @@
 # Icecream-Website-using-Django
 It is an ecommerce website  built on Django  
-Special Thanks to Deepanshu Singh who helped me in upload my site on heroku 
+Special Thanks to Deepanshu Singh who helped me in uploading my site on Heroku
+
 
 ### Edit 1-
 #### _Features Added_ :- 
