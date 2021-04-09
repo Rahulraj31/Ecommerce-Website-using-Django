@@ -1,6 +1,6 @@
 # Icecreams Selling Website using Django
 It is an ecommerce website  built on Django  
-Special Thanks to Deepanshu Singh who helped me in uploading my site on Heroku
+Special Thanks to Deepanshu Singh who helped me out by uploading my site on Heroku
 
 
 ### Edit 1-
